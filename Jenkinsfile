@@ -12,8 +12,7 @@ pipeline {
         stage('Read Text File') {
             steps {
                 echo 'Reading myfile.txt...'
-                // Assuming the file is in the repo root
-                sh 'cat myfile.txt'
+                bat 'type myfile.txt'
             }
         }
     }
